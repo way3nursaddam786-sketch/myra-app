@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#050505</color>
+    <color name="colorCard">#111111</color>
+    <color name="colorPrimary">#FF1744</color>
+    <color name="colorPurple">#D500F9</color>
+    <color name="colorSuccess">#00E676</color>
+    <color name="colorTextHint">#555555</color>
+    <color name="colorTextPrimary">#EEEEEE</color>
+    <string name="accessibility_description">MYRA needs accessibility access to open and close apps.</string>
+    <string name="app_name">MYRA</string>
+    <style name="Theme.Myra" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+    </style>
+</resources>
