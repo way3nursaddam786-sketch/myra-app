@@ -1,92 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#050505">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/chatListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="40dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/micButton"/>
 
-        <TextView
-            android:id="@+id/batteryText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="100%"
-            android:textColor="#FF1744"
-            android:fontFamily="monospace"/>
-
-        <TextView
-            android:id="@+id/titleText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="MYRA"
-            android:textColor="#FF1744"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-
-        <ImageButton
-            android:id="@+id/settingsBtn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_settings"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <Button
+        android:id="@+id/micButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Speak"
+        android:layout_marginBottom="20dp"/>
 
-        <TextView
-            android:id="@+id/statusText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tap karke bolo"
-            android:textColor="#555555"
-            android:textSize="14sp"/>
+</RelativeLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/chatRecycler"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"/>
-
-        <ImageButton
-            android:id="@+id/micButton"
-            android:layout_width="72dp"
-            android:layout_height="72dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/bg_mic_button"
-            android:src="@drawable/ic_mic_off"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Long press to stop"
-            android:textColor="#555555"
-            android:textSize="12sp"
-            android:layout_marginTop="4dp"/>
-
-    </LinearLayout>
-
-</FrameLayout>
